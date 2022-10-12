@@ -1,0 +1,7 @@
+D:\October 2022\KuberXServices\KuberXServices\bin\KuberXServices.dll.config
+D:\October 2022\KuberXServices\KuberXServices\bin\KuberXServices.dll
+D:\October 2022\KuberXServices\KuberXServices\bin\KuberXServices.pdb
+D:\October 2022\KuberXServices\KuberXServices\obj\Debug\KuberXServices.csproj.AssemblyReference.cache
+D:\October 2022\KuberXServices\KuberXServices\obj\Debug\KuberXServices.csproj.CoreCompileInputs.cache
+D:\October 2022\KuberXServices\KuberXServices\obj\Debug\KuberXServices.dll
+D:\October 2022\KuberXServices\KuberXServices\obj\Debug\KuberXServices.pdb

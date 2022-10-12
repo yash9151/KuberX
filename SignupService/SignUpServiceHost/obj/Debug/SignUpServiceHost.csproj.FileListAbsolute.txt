@@ -1,0 +1,12 @@
+D:\October 2022\SignupService\SignUpServiceHost\bin\Debug\SignUpServiceHost.exe.config
+D:\October 2022\SignupService\SignUpServiceHost\bin\Debug\SignUpServiceHost.exe
+D:\October 2022\SignupService\SignUpServiceHost\bin\Debug\SignUpServiceHost.pdb
+D:\October 2022\SignupService\SignUpServiceHost\bin\Debug\SignupService.dll
+D:\October 2022\SignupService\SignUpServiceHost\bin\Debug\SignupService.pdb
+D:\October 2022\SignupService\SignUpServiceHost\bin\Debug\SignupService.dll.config
+D:\October 2022\SignupService\SignUpServiceHost\obj\Debug\SignUpServiceHost.csproj.AssemblyReference.cache
+D:\October 2022\SignupService\SignUpServiceHost\obj\Debug\SignUpServiceHost.csproj.SuggestedBindingRedirects.cache
+D:\October 2022\SignupService\SignUpServiceHost\obj\Debug\SignUpServiceHost.csproj.CoreCompileInputs.cache
+D:\October 2022\SignupService\SignUpServiceHost\obj\Debug\SignUpServiceHost.csproj.CopyComplete
+D:\October 2022\SignupService\SignUpServiceHost\obj\Debug\SignUpServiceHost.exe
+D:\October 2022\SignupService\SignUpServiceHost\obj\Debug\SignUpServiceHost.pdb

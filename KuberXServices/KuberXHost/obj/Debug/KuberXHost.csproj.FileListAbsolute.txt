@@ -1,0 +1,12 @@
+D:\October 2022\KuberXServices\KuberXHost\bin\Debug\KuberXHost.exe.config
+D:\October 2022\KuberXServices\KuberXHost\bin\Debug\KuberXHost.exe
+D:\October 2022\KuberXServices\KuberXHost\bin\Debug\KuberXHost.pdb
+D:\October 2022\KuberXServices\KuberXHost\bin\Debug\KuberXServices.dll
+D:\October 2022\KuberXServices\KuberXHost\bin\Debug\KuberXServices.pdb
+D:\October 2022\KuberXServices\KuberXHost\bin\Debug\KuberXServices.dll.config
+D:\October 2022\KuberXServices\KuberXHost\obj\Debug\KuberXHost.csproj.AssemblyReference.cache
+D:\October 2022\KuberXServices\KuberXHost\obj\Debug\KuberXHost.csproj.SuggestedBindingRedirects.cache
+D:\October 2022\KuberXServices\KuberXHost\obj\Debug\KuberXHost.csproj.CoreCompileInputs.cache
+D:\October 2022\KuberXServices\KuberXHost\obj\Debug\KuberXHost.csproj.CopyComplete
+D:\October 2022\KuberXServices\KuberXHost\obj\Debug\KuberXHost.exe
+D:\October 2022\KuberXServices\KuberXHost\obj\Debug\KuberXHost.pdb

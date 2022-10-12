@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/KuberXServices" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/KuberXServices" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="UserModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserModel" nillable="true" type="tns:UserModel" />
+  <xs:complexType name="registrationmodel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmployeeID" type="xs:int" />
+      <xs:element minOccurs="0" name="OfficialEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="registrationmodel" nillable="true" type="tns:registrationmodel" />
+  <xs:complexType name="AdminModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="adm_Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="adm_Password" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AdminModel" nillable="true" type="tns:AdminModel" />
+  <xs:complexType name="GetAdminDetailsModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="adm_FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="adm_LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="adm_AdminID" type="xs:int" />
+      <xs:element minOccurs="0" name="adm_OfficialEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="adm_Password" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetAdminDetailsModel" nillable="true" type="tns:GetAdminDetailsModel" />
+  <xs:complexType name="AdminFeedbackModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Communication" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Employee_ID" type="xs:int" />
+      <xs:element minOccurs="0" name="Employee_Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OtherSkills" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="RecommendedSkills" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Result" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Skill1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Skill2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Skill3" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Skill4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Skill5" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AdminFeedbackModel" nillable="true" type="tns:AdminFeedbackModel" />
+</xs:schema>

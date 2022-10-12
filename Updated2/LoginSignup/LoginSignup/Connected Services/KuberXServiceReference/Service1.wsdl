@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:62673/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:62673/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:62673/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/KuberXServices" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IUser_ValidateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateUser" />
+  </wsdl:message>
+  <wsdl:message name="IUser_ValidateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRegistration_SaveUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveUser" />
+  </wsdl:message>
+  <wsdl:message name="IRegistration_SaveUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IRegistration_GetDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDetails" />
+  </wsdl:message>
+  <wsdl:message name="IRegistration_GetDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_ValidateAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateAdmin" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_ValidateAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ValidateAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_GetAdminDetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdminDetails" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_GetAdminDetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAdminDetailsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_InsertAdminFeedback_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAdminFeedback" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_InsertAdminFeedback_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertAdminFeedbackResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IUser">
+    <wsdl:operation name="ValidateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IUser/ValidateUser" message="tns:IUser_ValidateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IUser/ValidateUserResponse" message="tns:IUser_ValidateUser_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IRegistration">
+    <wsdl:operation name="SaveUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRegistration/SaveUser" message="tns:IRegistration_SaveUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRegistration/SaveUserResponse" message="tns:IRegistration_SaveUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IRegistration/GetDetails" message="tns:IRegistration_GetDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IRegistration/GetDetailsResponse" message="tns:IRegistration_GetDetails_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IAdmin">
+    <wsdl:operation name="ValidateAdmin">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmin/ValidateAdmin" message="tns:IAdmin_ValidateAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmin/ValidateAdminResponse" message="tns:IAdmin_ValidateAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAdminDetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmin/GetAdminDetails" message="tns:IAdmin_GetAdminDetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmin/GetAdminDetailsResponse" message="tns:IAdmin_GetAdminDetails_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertAdminFeedback">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmin/InsertAdminFeedback" message="tns:IAdmin_InsertAdminFeedback_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmin/InsertAdminFeedbackResponse" message="tns:IAdmin_InsertAdminFeedback_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IUser" type="tns:IUser">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidateUser">
+      <soap:operation soapAction="http://tempuri.org/IUser/ValidateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IRegistration" type="tns:IRegistration">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SaveUser">
+      <soap:operation soapAction="http://tempuri.org/IRegistration/SaveUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDetails">
+      <soap:operation soapAction="http://tempuri.org/IRegistration/GetDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IAdmin" type="tns:IAdmin">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidateAdmin">
+      <soap:operation soapAction="http://tempuri.org/IAdmin/ValidateAdmin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAdminDetails">
+      <soap:operation soapAction="http://tempuri.org/IAdmin/GetAdminDetails" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InsertAdminFeedback">
+      <soap:operation soapAction="http://tempuri.org/IAdmin/InsertAdminFeedback" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IUser" binding="tns:BasicHttpBinding_IUser">
+      <soap:address location="http://localhost:62673/Service1.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IRegistration" binding="tns:BasicHttpBinding_IRegistration">
+      <soap:address location="http://localhost:62673/Service1.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IAdmin" binding="tns:BasicHttpBinding_IAdmin">
+      <soap:address location="http://localhost:62673/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

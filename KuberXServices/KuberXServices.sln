@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KuberXServices", "KuberXServices\KuberXServices.csproj", "{5B0867C1-A759-4E70-89DA-150545710F92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KuberXHost", "KuberXHost\KuberXHost.csproj", "{BE7E7F64-B401-4D9D-8D99-5FAF6A650C93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B0867C1-A759-4E70-89DA-150545710F92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B0867C1-A759-4E70-89DA-150545710F92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B0867C1-A759-4E70-89DA-150545710F92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B0867C1-A759-4E70-89DA-150545710F92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE7E7F64-B401-4D9D-8D99-5FAF6A650C93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE7E7F64-B401-4D9D-8D99-5FAF6A650C93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE7E7F64-B401-4D9D-8D99-5FAF6A650C93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE7E7F64-B401-4D9D-8D99-5FAF6A650C93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E9AF9796-9BA8-4412-AD8A-FE2CF4985046}
+	EndGlobalSection
+EndGlobal

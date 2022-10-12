@@ -1,0 +1,7 @@
+D:\October 2022\SignupService\SignupService\bin\Debug\SignupService.dll.config
+D:\October 2022\SignupService\SignupService\bin\Debug\SignupService.dll
+D:\October 2022\SignupService\SignupService\bin\Debug\SignupService.pdb
+D:\October 2022\SignupService\SignupService\obj\Debug\SignupService.csproj.AssemblyReference.cache
+D:\October 2022\SignupService\SignupService\obj\Debug\SignupService.csproj.CoreCompileInputs.cache
+D:\October 2022\SignupService\SignupService\obj\Debug\SignupService.dll
+D:\October 2022\SignupService\SignupService\obj\Debug\SignupService.pdb
