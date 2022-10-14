@@ -72,8 +72,11 @@
     <Content Include="Admin\AdminLogin.aspx" />
     <Content Include="Admin\Admin_Profile.aspx" />
     <Content Include="Admin\FeedbackForm.aspx" />
+    <Content Include="Admin\GetEmployeeDetails.aspx" />
     <Content Include="Admin\Vesperr\Admin_Employeedetails.aspx" />
     <Content Include="Admin\Vesperr\assets\css\AdminEmployeedetails.css" />
+    <Content Include="Admin\Vesperr\assets\css\GetEmployeeDetailsStylesheet.css" />
+    <Content Include="Admin\Vesperr\assets\css\SearchEmployeeBar.css" />
     <Content Include="Admin\Vesperr\assets\css\style.css" />
     <Content Include="Admin\Vesperr\assets\img\apple-touch-icon.png" />
     <Content Include="Admin\Vesperr\assets\img\clients\client-1.png" />
@@ -537,6 +540,13 @@
     </Compile>
     <Compile Include="Admin\FeedbackForm.aspx.designer.cs">
       <DependentUpon>FeedbackForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\GetEmployeeDetails.aspx.cs">
+      <DependentUpon>GetEmployeeDetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\GetEmployeeDetails.aspx.designer.cs">
+      <DependentUpon>GetEmployeeDetails.aspx</DependentUpon>
     </Compile>
     <Compile Include="Admin\Vesperr\Admin_Employeedetails.aspx.cs">
       <DependentUpon>Admin_Employeedetails.aspx</DependentUpon>

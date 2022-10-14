@@ -29,7 +29,7 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="Helper/css/style.default.css" rel="stylesheet" />
     <link href="Helper/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-
+    <link href="assets/css/SearchEmployeeBar.css" rel="stylesheet" />
     <!-- =======================================================
     * Template Name: Kuber X - v4.9.0
     * Template URL: https://bootstrapmade.com/Kuber X-free-bootstrap-template/
@@ -275,7 +275,16 @@
   <br />        
     <!-- ======= Services Section ======= -->
   <section id="services" class="services">
-   
+
+      <div class="wrap">
+          <div class="search">
+              <input type="text" class="searchTerm" placeholder="Search Employee?">
+              <button type="submit" class="searchButton">
+                  <i class="fa fa-search"></i>
+                  🔎
+              </button>
+          </div>
+      </div>
 
       <div class="container">
 
@@ -298,28 +307,28 @@
 
 
 
-              
-              <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                  <a href="../../Pages/ClientRatings.aspx">
-                      <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-                          <div class="icon"><i class="bx bx-file"></i></div>
-                          <h4 class="title"><a href="">Rating</a></h4>
-                          <p class="description">Feedback  ................................................................</p>
-                      </div>
-                   </a>
-              </div>
 
               <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                  <a href="../../Pages/Recommendation.aspx">
-                  <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-                      <div class="icon"><i class="bx bx-tachometer"></i></div>
-                      <h4 class="title"><a href="">Recommendations.</a></h4>
-                      <p class="description">Certifications & Trainings recommended ................................................................</</p>
+                  <a href="../FeedbackForm.aspx">
+                  <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                      <div class="icon"><i class="bx bx-file"></i></div>
+                      <h4 class="title"><a href="">Recent Interview Feedback</a></h4>
+                      <p class="description">Feedback  ................................................................</p>
                   </div>
                   </a>
               </div>
 
               <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                  <a href="../../Pages/Recommendation.aspx">
+                      <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+                          <div class="icon"><i class="bx bx-tachometer"></i></div>
+                          <h4 class="title"><a href="">Recommendations.</a></h4>
+                          <p class="description">Certifications & Trainings recommended ................................................................</</p>
+                      </div>
+                  </a>
+              </div>
+
+              <!--<div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
                   <a href="../../Pages/Timesheet.aspx">
                       <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
                           <div class="icon"><i class="bx bx-world"></i></div>
@@ -327,7 +336,7 @@
                           <p class="description">Timesheet ................................................................</</p>
                       </div>
                   </a>
-              </div>
+              </div>-->
 
           </div>
 

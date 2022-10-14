@@ -22,7 +22,7 @@ namespace LoginSignup
         protected void signupclick(object sender, EventArgs e)
         {
             Response.Redirect("Login.aspx");
-            Response.Write("<script>alert('User Regitered Successfully');</script>");
+            Response.Write("<script>alert('User Registered Successfully');</script>");
         }
 
         protected void btn_Register(object sender, EventArgs e)
@@ -37,7 +37,7 @@ namespace LoginSignup
             KuberXServiceReference.RegistrationClient client =new KuberXServiceReference.RegistrationClient();
             client.SaveUser(signUp);
             ///done with frontend
-            Response.Write("<script>alert('User Regitered Successfully');</script>");
+            Response.Write("<script>alert('User Registered Successfully');</script>");
             Server.Transfer("Login.aspx");
         }
     }

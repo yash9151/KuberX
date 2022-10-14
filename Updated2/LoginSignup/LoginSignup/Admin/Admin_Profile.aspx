@@ -44,6 +44,7 @@
     * Author: BootstrapMade.com
     * License: https://bootstrapmade.com/license/
     ======================================================== -->
+    <link href="Vesperr/assets/css/SearchEmployeeBar.css" rel="stylesheet" />
     <link href="../Helper/css/skillprofile.css" rel="stylesheet" />
     <link href="../Helper/css/SkillProfileresumeupload.css" rel="stylesheet" />
     <style type="text/css">
@@ -97,7 +98,7 @@
                   </ul>
                   <ul>
                          <asp:Button cssClass="getstarted scrollto" runat="server" Text="Logout" OnClick="btn_Logout"  />
-                      <!--<a class="getstarted scrollto" href="index.html">index.html</a>-->
+                      <!--<a class="getstart<a href="../Backup/Vesperr/assets/css/">../Backup/Vesperr/assets/css/</a>ed scrollto" href="index.html">index.html</a>-->
                  </ul>
                   
                  <%--<a class="getstarted scrollto" href="../Backup/Vesperr/index.html">Home</a>--%><%--<a class="getstarted scrollto" href="#">LogOut</a>--%><%--</li>--%>                <%--<li><a class="getstarted scrollto" href="#about">Home</a></li>--%>
