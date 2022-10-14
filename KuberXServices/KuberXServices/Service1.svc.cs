@@ -356,6 +356,32 @@ namespace KuberXServices
                 throw ex;
             }
         }
+
+        public SearchEmployeeModel searchemployeedetails(int employeeid)
+        {
+            SearchEmployeeModel model = new SearchEmployeeModel();
+            string cs = ConfigurationManager.ConnectionStrings["DBCS"].ConnectionString;
+            using (SqlConnection con = new SqlConnection(cs))
+            {
+                SqlCommand cmd = new SqlCommand("spSearchEmployeeDetails", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlParameter parameterId = new SqlParameter();
+                parameterId.ParameterName = "@Employee_ID";
+                parameterId.Value = employeeid; 
+                cmd.Parameters.Add(parameterId);
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    model.FirstName = reader["First_Name"].ToString();
+                    model.LastName = reader["Last_Name"].ToString();
+                    model.OfficialEmail = reader["Official_Email"].ToString();
+                    model.EmployeeID = Convert.ToInt32(reader["Employee_ID"]);
+                    model.Image = reader["ImageData"].ToString();
+                }
+            }
+            return model;
+        }
         ///////////////////////////////////////////////////////////////////Admin////////////////////////////
         ///////////////////////////////////////////////////////////////////Admin////////////////////////////
     }

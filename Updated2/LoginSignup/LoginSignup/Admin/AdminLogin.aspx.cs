@@ -29,7 +29,7 @@ namespace LoginSignup.Admin
                     bool isvalid = client.ValidateAdmin(admin);
                     if (isvalid)
                     {
-                        Response.Redirect("/Admin/Vesperr/index.html");
+                        Response.Redirect("/Admin/Vesperr/index.aspx");
 
                         //Response.Redirect("Backup/Vesperr/index.html@EmailTextbox="+this.EmailTextbox.Text);
                     }

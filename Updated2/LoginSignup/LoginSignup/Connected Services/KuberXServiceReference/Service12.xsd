@@ -85,4 +85,18 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="searchemployeedetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="employeeid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="searchemployeedetailsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/KuberXServices" minOccurs="0" name="searchemployeedetailsResult" nillable="true" type="q7:SearchEmployeeModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
 </xs:schema>

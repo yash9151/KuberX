@@ -50,4 +50,14 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="AdminFeedbackModel" nillable="true" type="tns:AdminFeedbackModel" />
+  <xs:complexType name="SearchEmployeeModel">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmployeeID" type="xs:int" />
+      <xs:element minOccurs="0" name="OfficialEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Image" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SearchEmployeeModel" nillable="true" type="tns:SearchEmployeeModel" />
 </xs:schema>

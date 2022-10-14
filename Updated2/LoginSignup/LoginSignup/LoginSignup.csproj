@@ -165,7 +165,9 @@
     <Content Include="Admin\Vesperr\changelog.txt" />
     <Content Include="Admin\Vesperr\forms\contact.php" />
     <Content Include="Admin\Vesperr\forms\Readme.txt" />
-    <Content Include="Admin\Vesperr\index.html" />
+    <Content Include="Admin\Vesperr\forms\index.html" />
+    <Content Include="Admin\Vesperr\assets\index.aspx" />
+    <Content Include="Admin\Vesperr\index.aspx" />
     <Content Include="Admin\Vesperr\inner-page.html" />
     <Content Include="Admin\Vesperr\portfolio-details.html" />
     <Content Include="Admin\Vesperr\Readme.txt" />
@@ -299,6 +301,9 @@
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <Content Include="Connected Services\KuberXServiceReference\LoginSignup.KuberXServiceReference.GetAdminDetailsModel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+    <Content Include="Connected Services\KuberXServiceReference\LoginSignup.KuberXServiceReference.SearchEmployeeModel.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Content>
     <None Include="Connected Services\KuberXServiceReference\Service1.disco" />
@@ -554,6 +559,20 @@
     </Compile>
     <Compile Include="Admin\Vesperr\Admin_Employeedetails.aspx.designer.cs">
       <DependentUpon>Admin_Employeedetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Vesperr\assets\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Vesperr\assets\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Vesperr\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Vesperr\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Connected Services\KuberXServiceReference\Reference.cs">
       <AutoGen>True</AutoGen>

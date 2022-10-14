@@ -19,5 +19,8 @@ namespace KuberXServices
 
         [OperationContract]
         bool InsertAdminFeedback(AdminFeedbackModel feedback);
+
+        [OperationContract]
+        SearchEmployeeModel searchemployeedetails(int employeeid);
     }
 }

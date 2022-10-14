@@ -89,7 +89,7 @@
                 <%--<li><a class="nav-link scrollto active" href="#hero">------------------------------------------------------------------------</a></li>--%>
                 <ul>
                       <%--<a class="getstarted scrollto" href="index.html">Home</a>--%>
-                    <a class="getstarted scrollto" href="Vesperr/index.html">Home</a>
+                    <a class="getstarted scrollto" href="Vesperr/index.aspx">Home</a>
                       <!--<a class="getstarted scrollto" href="index.html">index.html</a>-->
                   </ul>
                   <ul>
@@ -107,6 +107,226 @@
     </div>
           
 </header>
+ <body>
+     <div class="container">
+             <div class="main-body">
+         
+          <!-- Breadcrumb -->
+          <nav aria-label="breadcrumb" class="main-breadcrumb">
+            <ol class="breadcrumb">
+                <%--  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+              <li class="breadcrumb-item"><a href="javascript:void(0)">User</a></li>--%>
+              <h2><li class="breadcrumb-item active" aria-current="page">My Account</li></h2    >
+            </ol>
+          </nav>
+          <!-- /Breadcrumb -->
+    
+          <div class="row gutters-sm">
+           
+            <div class="col-md-8">
+              <div class="card mb-3" >
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Full Name</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Email</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Employee ID</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        <asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>
+                    </div>
+                  </div>
+
+                <%--<hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Employee ID</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+                    </div>
+                  </div>--%>
+
+                 <%--   <hr>
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Employee ID</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
+                    </div>
+                  </div>--%>
+                  
+                <%--  <div class="row">
+                    <div class="col-sm-3">
+                      <h6 class="mb-0">Mobile</h6>
+                    </div>
+                    <div class="col-sm-9 text-secondary">
+                        <asp:Label ID="Label4" runat="server" Text="Label"></asp:Label>
+                    </div>
+                  </div>--%>
+                  <hr>
+                  <div class="row">
+                      <%--<div class="col-sm-12">--%><%--<a class="btn btn-info " target="__blank" href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills">Edit</a>--%><%--<asp:Button ID="Button1"  runat="server" Text="Upload Resume" />--%>
+                        <div class="col-sm-3">
+                              <h6 class="mb-0"></h6>
+                         </div>
+                        <%--<div class="col-sm-9 text-secondary" id="GridView1">--%> 
+
+                   <%--   <div style="font-family:Arial">
+                            <asp:FileUpload ID="FileUpload1" runat="server" />
+                            <asp:Button ID="Button1" runat="server" Text="Upload" 
+                                OnClick="Button1_Click" />
+                            <br />
+                            <br />
+                            <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" 
+                                OnRowCommand="GridView1_RowCommand" BackColor="White" 
+                                BorderColor="#CC9966" BorderStyle="None" 
+                                BorderWidth="1px" CellPadding="4">
+                                <Columns>
+                                    <asp:TemplateField HeaderText="File" ShowHeader="False">
+                                        <ItemTemplate>
+                                            <asp:LinkButton ID="LinkButton1" runat="server" 
+                                                CausesValidation="False" 
+                                                CommandArgument='<%# Eval("File") %>'
+                                                CommandName="Download" Text='<%# Eval("File") %>'>
+                                                </asp:LinkButton>
+                                        </ItemTemplate>
+                                    </asp:TemplateField>
+                                    <asp:BoundField DataField="Size" HeaderText="Size in Bytes" />
+                                    <asp:BoundField DataField="Type" HeaderText="File Type" />
+                                </Columns>
+                                <FooterStyle BackColor="#FFFFCC" ForeColor="#330099" />
+                                <HeaderStyle BackColor="#990000" Font-Bold="True" 
+                                    ForeColor="#FFFFCC" />
+                                <PagerStyle BackColor="#FFFFCC" ForeColor="#330099" 
+                                    HorizontalAlign="Center" />
+                                <RowStyle BackColor="White" ForeColor="#330099" />
+                                <SelectedRowStyle BackColor="#FFCC66" Font-Bold="True" 
+                                    ForeColor="#663399" />
+                                <SortedAscendingCellStyle BackColor="#FEFCEB" />
+                                <SortedAscendingHeaderStyle BackColor="#AF0101" />
+                                <SortedDescendingCellStyle BackColor="#F6F0C0" />
+                                <SortedDescendingHeaderStyle BackColor="#7E0000" />
+                            </asp:GridView>
+                            </div>--%>
+
+                            <%--<asp:FileUpload ID="FileUpload1" CssClass="btn btn-info " runat="server" />
+                            
+                             <asp:Button CssClass="btn btn-info" ID="btnUpload" runat="server" Text="Upload" OnClick="Upload" />--%>
+
+<%--                            <asp:Button ID="btnUpload" runat="server" Text="Upload" onclick="btnUpload_Click" />
+                            </div>
+                            <div>
+                            <asp:GridView ID="gvDetails" CssClass="Gridview" runat="server" AutoGenerateColumns="false" DataKeyNames="FilePath">
+                            <HeaderStyle BackColor="#df5015" />
+                            <Columns>
+                            <asp:BoundField DataField="Id" HeaderText="Id" />
+                            <asp:BoundField DataField="FileName" HeaderText="FileName" />
+                            <asp:TemplateField HeaderText="FilePath">
+                            <ItemTemplate>
+                            <asp:LinkButton ID="lnkDownload" runat="server" Text="Download" OnClick="lnkDownload_Click"></asp:LinkButton>
+                            </ItemTemplate>
+                            </asp:TemplateField>
+                            </Columns>
+                            </asp:GridView>
+                            </div>
+--%>
+
+
+
+                            <hr />
+                      
+                        
+                        <br />
+
+                      <%--</div>--%>
+                  </div>
+                </div>
+              </div>
+
+          <%--    <div class="row gutters-sm">
+                <div class="col-sm-6 mb-3">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">assignment</i>Project Status</h6>
+                      <small>Web Design</small>
+                      <div class="progress mb-3" style="height: 5px">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <small>Website Markup</small>
+                      <div class="progress mb-3" style="height: 5px">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <small>One Page</small>
+                      <div class="progress mb-3" style="height: 5px">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <small>Mobile Template</small>
+                      <div class="progress mb-3" style="height: 5px">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <small>Backend API</small>
+                      <div class="progress mb-3" style="height: 5px">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 mb-3">
+                  <div class="card h-100">
+                    <div class="card-body">
+                      <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">assignment</i>Project Status</h6>
+                      <small>Web Design</small>
+                      <div class="progress mb-3" style="height: 5px">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <small>Website Markup</small>
+                      <div class="progress mb-3" style="height: 5px">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <small>One Page</small>
+                      <div class="progress mb-3" style="height: 5px">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <small>Mobile Template</small>
+                      <div class="progress mb-3" style="height: 5px">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                      <small>Backend API</small>
+                      <div class="progress mb-3" style="height: 5px">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>--%>
+
+
+
+            </div>
+          </div>
+
+        </div>
+
+         </div>
+    
     </form>
 </body>
 </html>

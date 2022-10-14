@@ -39,5 +39,10 @@ namespace LoginSignup.Admin
             Server.Transfer("Admin_Profile.aspx");
 
         }
+
+        protected void btn_Logout(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -43,6 +43,12 @@
   <wsdl:message name="IAdmin_InsertAdminFeedback_OutputMessage">
     <wsdl:part name="parameters" element="tns:InsertAdminFeedbackResponse" />
   </wsdl:message>
+  <wsdl:message name="IAdmin_searchemployeedetails_InputMessage">
+    <wsdl:part name="parameters" element="tns:searchemployeedetails" />
+  </wsdl:message>
+  <wsdl:message name="IAdmin_searchemployeedetails_OutputMessage">
+    <wsdl:part name="parameters" element="tns:searchemployeedetailsResponse" />
+  </wsdl:message>
   <wsdl:portType name="IUser">
     <wsdl:operation name="ValidateUser">
       <wsdl:input wsaw:Action="http://tempuri.org/IUser/ValidateUser" message="tns:IUser_ValidateUser_InputMessage" />
@@ -71,6 +77,10 @@
     <wsdl:operation name="InsertAdminFeedback">
       <wsdl:input wsaw:Action="http://tempuri.org/IAdmin/InsertAdminFeedback" message="tns:IAdmin_InsertAdminFeedback_InputMessage" />
       <wsdl:output wsaw:Action="http://tempuri.org/IAdmin/InsertAdminFeedbackResponse" message="tns:IAdmin_InsertAdminFeedback_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="searchemployeedetails">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAdmin/searchemployeedetails" message="tns:IAdmin_searchemployeedetails_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAdmin/searchemployeedetailsResponse" message="tns:IAdmin_searchemployeedetails_OutputMessage" />
     </wsdl:operation>
   </wsdl:portType>
   <wsdl:binding name="BasicHttpBinding_IUser" type="tns:IUser">
@@ -128,6 +138,15 @@
     </wsdl:operation>
     <wsdl:operation name="InsertAdminFeedback">
       <soap:operation soapAction="http://tempuri.org/IAdmin/InsertAdminFeedback" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="searchemployeedetails">
+      <soap:operation soapAction="http://tempuri.org/IAdmin/searchemployeedetails" style="document" />
       <wsdl:input>
         <soap:body use="literal" />
       </wsdl:input>

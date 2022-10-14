@@ -42,7 +42,6 @@
             <div class="col-rt-12">
                 <div class="rt-heading">
                     <h1>Interview Feedback </h1>
-
                 </div>
             </div>
         </div>

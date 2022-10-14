@@ -558,6 +558,115 @@ namespace LoginSignup.KuberXServiceReference {
         }
     }
     
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="SearchEmployeeModel", Namespace="http://schemas.datacontract.org/2004/07/KuberXServices")]
+    [System.SerializableAttribute()]
+    public partial class SearchEmployeeModel : object, System.Runtime.Serialization.IExtensibleDataObject, System.ComponentModel.INotifyPropertyChanged {
+        
+        [System.NonSerializedAttribute()]
+        private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string FirstNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string LastNameField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private int EmployeeIDField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string OfficialEmailField;
+        
+        [System.Runtime.Serialization.OptionalFieldAttribute()]
+        private string ImageField;
+        
+        [global::System.ComponentModel.BrowsableAttribute(false)]
+        public System.Runtime.Serialization.ExtensionDataObject ExtensionData {
+            get {
+                return this.extensionDataField;
+            }
+            set {
+                this.extensionDataField = value;
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string FirstName {
+            get {
+                return this.FirstNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.FirstNameField, value) != true)) {
+                    this.FirstNameField = value;
+                    this.RaisePropertyChanged("FirstName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute()]
+        public string LastName {
+            get {
+                return this.LastNameField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.LastNameField, value) != true)) {
+                    this.LastNameField = value;
+                    this.RaisePropertyChanged("LastName");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=2)]
+        public int EmployeeID {
+            get {
+                return this.EmployeeIDField;
+            }
+            set {
+                if ((this.EmployeeIDField.Equals(value) != true)) {
+                    this.EmployeeIDField = value;
+                    this.RaisePropertyChanged("EmployeeID");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=3)]
+        public string OfficialEmail {
+            get {
+                return this.OfficialEmailField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.OfficialEmailField, value) != true)) {
+                    this.OfficialEmailField = value;
+                    this.RaisePropertyChanged("OfficialEmail");
+                }
+            }
+        }
+        
+        [System.Runtime.Serialization.DataMemberAttribute(Order=4)]
+        public string Image {
+            get {
+                return this.ImageField;
+            }
+            set {
+                if ((object.ReferenceEquals(this.ImageField, value) != true)) {
+                    this.ImageField = value;
+                    this.RaisePropertyChanged("Image");
+                }
+            }
+        }
+        
+        public event System.ComponentModel.PropertyChangedEventHandler PropertyChanged;
+        
+        protected void RaisePropertyChanged(string propertyName) {
+            System.ComponentModel.PropertyChangedEventHandler propertyChanged = this.PropertyChanged;
+            if ((propertyChanged != null)) {
+                propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(ConfigurationName="KuberXServiceReference.IUser")]
     public interface IUser {
@@ -687,6 +796,12 @@ namespace LoginSignup.KuberXServiceReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmin/InsertAdminFeedback", ReplyAction="http://tempuri.org/IAdmin/InsertAdminFeedbackResponse")]
         System.Threading.Tasks.Task<bool> InsertAdminFeedbackAsync(LoginSignup.KuberXServiceReference.AdminFeedbackModel feedback);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmin/searchemployeedetails", ReplyAction="http://tempuri.org/IAdmin/searchemployeedetailsResponse")]
+        LoginSignup.KuberXServiceReference.SearchEmployeeModel searchemployeedetails(int employeeid);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IAdmin/searchemployeedetails", ReplyAction="http://tempuri.org/IAdmin/searchemployeedetailsResponse")]
+        System.Threading.Tasks.Task<LoginSignup.KuberXServiceReference.SearchEmployeeModel> searchemployeedetailsAsync(int employeeid);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -738,6 +853,14 @@ namespace LoginSignup.KuberXServiceReference {
         
         public System.Threading.Tasks.Task<bool> InsertAdminFeedbackAsync(LoginSignup.KuberXServiceReference.AdminFeedbackModel feedback) {
             return base.Channel.InsertAdminFeedbackAsync(feedback);
+        }
+        
+        public LoginSignup.KuberXServiceReference.SearchEmployeeModel searchemployeedetails(int employeeid) {
+            return base.Channel.searchemployeedetails(employeeid);
+        }
+        
+        public System.Threading.Tasks.Task<LoginSignup.KuberXServiceReference.SearchEmployeeModel> searchemployeedetailsAsync(int employeeid) {
+            return base.Channel.searchemployeedetailsAsync(employeeid);
         }
     }
 }
